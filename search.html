@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Page</title>
+    <link rel="stylesheet" type="text/css" href="searchstyle.css" media="all">
+</head>
+
+<body>
+
+<div class="navbar">
+        <span class = "logo_subtitle" >
+            <h1 style="display: inline-block">Art Store</h1>
+            <h5 style="display: inline-block">Where you find GENIUS and EXTRAODINARY </h5>
+        </span>
+
+    <span class="searchbar" style="display: inline-block">
+            <form>
+                <input type="text" placeholder="search..." name="search" list="options">
+                <datalist id="options">
+                    <option label="Hello" value="Hello"> Hello<option>
+                </datalist>
+                <button type="submit">Search</button>
+            </form>
+        </span>
+
+    <span class = "nav_01">
+            <a href="">标题</a>
+            <a href="search.html">搜索</a>
+            <a href="product_detail.html">详情</a>
+            <a href="login_page.html">登陆</a>
+            <a href="register_page.html">注册</a>
+        </span>
+</div>
+
+<hr/>
+
+<div class="searchbox">
+    <div class="searchbar2">
+        <form>
+            <input type="text" placeholder="Search Content" name="search">
+            <button type="submit">Search</button>
+            <table>
+                <tr>
+                    <td>
+                        <p>Please Select Genre</p>
+                        <input type="radio" name="genre" value="1" id="1">
+                        <label for= "1"> 1 </label><br>
+                        <input type="radio" name="genre" value="2" id="2">
+                        <label for= "2"> 2 </label><br>
+                        <input type="radio" name="genre" value="3" id="3">
+                        <label for= "3"> 3 </label><br>
+                    </td>
+                    <td>
+                        <p>Please Select Date</p>
+                        <input type="radio" name="genre" value="1" id="4">
+                        <label for= "4"> 1 </label><br>
+                        <input type="radio" name="genre" value="2" id="5">
+                        <label for= "5"> 2 </label><br>
+                        <input type="radio" name="genre" value="3" id="6">
+                        <label for= "6"> 3 </label><br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</div>
+
+<ul class="pagination">
+    <li><a href="#"><</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">></a></li>
+</ul>
+
+</body>
+</html>

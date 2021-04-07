@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Single Item</title>
-    <style>
+    <link rel="stylesheet" type = "text/css" href="pdetail.css" media = "all">
+    <!--<style>
         .nav_01 a {float: right; text-align: center; width: 50px; margin-top:2%}
         .logo_subtitle{padding: 0px}
         .title{text-align: center}
@@ -12,12 +13,12 @@
             padding: 100px;
 
         }
-        .discription{
-            float:right;
-            padding: 0px;
-            margin-right: 20%;
+        /*.discription{*/
+        /*    float:right;*/
+        /*    padding: 0px;*/
+        /*    margin-right: 20%;*/
 
-        }
+        /*}*/
         .wishbutton{
             border: none;
             color: aliceblue;
@@ -26,50 +27,68 @@
             cursor: pointer;
         }
 
-    </style>
+    </style>-->
 </head>
 
 
 <body>
-<div class = "nav_01">
-    <a href="login_page.html">未登录</a>
+    <span class = "logo_subtitle" >
+        <h1 style="display: inline-block">Art Store</h1>
+        <a href="login_page.html">登陆</a>
+        <h5 style="display: inline-block">or </h5>
+        <a href="register_page.html">注册</a>
+    </span>
+
+    <span class="searchbar" style="display: inline-block">
+            <form>
+                <input type="text" placeholder="search..." name="search">
+                <button type="submit">Search</button>
+            </form>
+    </span>
+
+    <span class = "nav_01">
+        <a href="login_page.html">未登录</a>
+    </span>
 
 
-
-</div>
-
-<div class = "logo_subtitle" >
-    <h1 style="display: inline-block">Art Store</h1>
-    <a href="login_page.html">登陆</a>
-    <h5 style="display: inline-block">or </h5>
-    <a href="register_page.html">注册</a>
-</div>
-
-<hr/>
-
-<div class="title">
-    <h4>Picture Name</h4>
-    <p>Artist name</p>
-</div>
-
-<hr/>
-
-<div class="picsart">
-    <figure>
-        <img src="resources/img/35.jpg" height="279" width="500";/>
-    </figure>
-</div>
-
-<div class="discription">
-    <h5> history</h5>
-    <p>Artisit: Jean-Auguste-Dominique Ingres</p>
-    <p>Medium: Oil Painting</p>
-    <p>School: Romanticisim</p>
-    <p>Location: Louvre, Paris</p>
     <hr/>
-    <p>Price: 180,000,000 dollars</p>
-    <button class="wishbutton" >Add to wish bag</button>
-</div>
+
+    <div class="title">
+        <h4>Picture Name</h4>
+        <p>Artist name</p>
+    </div>
+
+    <hr/>
+
+
+    <table>
+        <tr><th rowspan="9" width = 50% padding-width="20%"><img src="resources/img/35.jpg" width="50%"/></th></tr>
+        <tr><td> <h3> History</h3> </td></tr>
+        <tr><td> <p>Artist: Jean-Auguste-Dominique Ingres</p> </td></tr>
+        <tr><td> <p>Medium: Oil Painting</p> </td></tr>
+        <tr><td> <p>School: Romanticism</p> </td></tr>
+        <tr><td> <p>Location: Louvre, Paris</p> </td></tr>
+        <tr><td> <hr/> </td></tr>
+        <tr><td> <p>Price: 180,000,000 dollars</p> </td></tr>
+        <tr><td> <button class="wishbutton" >Add to wish bag</button> </td></tr>
+
+
+    </table>
+
+    <!--<div class="picsart">-->
+
+    <!--</div>-->
+
+    <!--<div class="discription">-->
+    <!--    <h5> history</h5>-->
+    <!--    <p>Artisit: Jean-Auguste-Dominique Ingres</p>-->
+    <!--    <p>Medium: Oil Painting</p>-->
+    <!--    <p>School: Romanticisim</p>-->
+    <!--    <p>Location: Louvre, Paris</p>-->
+    <!--    <hr/>-->
+    <!--    <p>Price: 180,000,000 dollars</p>-->
+    <!--    <button class="wishbutton" >Add to wish bag</button>-->
+    <!--</div>-->
 
 </body>
 </html>

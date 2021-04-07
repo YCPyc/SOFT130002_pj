@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Main</title>
-    <style>
-    .nav_01 a {float: right; text-align: center; width: 50px}
+    <link rel="stylesheet" type = "text/css" href="mainStyle.css" media = "all">
+   <!-- <style>
+    .nav_01 a {float: right; text-align: center; width: 50px; padding-top: 2%; padding-bottom:2%; padding-left:0; padding-right:0;}
     .logo_subtitle{padding: 0px}
     .head_pic{text-align: center}
 
@@ -24,81 +25,123 @@
         width: 100%;
         background: grey;
     }
-    figure{
-        width:20%;
+    /*figure{*/
+    /*    width:20%;*/
+    /*    float: left;*/
+    /*    margin-left:80px;*/
+    /*    margin-right: 80px;*/
+    /*    text-align:center;*/
+    /*    padding:0px;*/
+    /*}*/
+    .column {
         float: left;
-        margin-left:80px;
-        margin-right: 80px;
-        text-align:center;
-        padding:0px;
+        padding: 0px;
+        text-align: center;
+        margin: 10px;
+
+    }
+    .displayimg{
+        width:356px;
+        height: 640px;
     }
 
-    </style>
+
+
+
+
+    </style>-->
 </head>
 
 <body>
 <div class="content-wrap">
-<div class = "nav_01">
-    <a href="">标题</a>
-    <a href="">搜索</a>
-    <a href="">详情</a>
-    <a href="login_page.html">登陆</a>
-    <a href="register_page.html">注册</a>
-</div>
 
-<div class = "logo_subtitle" >
-    <h1 style="display: inline-block">Art Store</h1>
-    <h5 style="display: inline-block">Where you find GENIUS and EXTRAODINARY </h5>
-</div>
-<hr/>
+    <div class="navbar">
+        <span class = "logo_subtitle" >
+            <h1 style="display: inline-block">Art Store</h1>
+            <h5 style="display: inline-block">Where you find GENIUS and EXTRAODINARY </h5>
+        </span>
 
-<div class="head_pic">
-<img src="resources/img/7.jpg" alt = "family" height="640" width="662"/>
-</div>
-<hr/>
+        <span class="searchbar" style="display: inline-block">
+            <form>
+                <input type="text" placeholder="search..." name="search" list="options">
+                 <datalist id="options">
+                    <option label="Hello" value="Hello"> Hello<option>
+                </datalist>
+                <button type="submit">Search</button>
+            </form>
+        </span>
 
-<div class="mostviewed">
-    <h5>Most Viewed</h5>
-</div>
+        <span class = "nav_01">
+            <a href="">标题</a>
+            <a href="search.html">搜索</a>
+            <a href="product_detail.html">详情</a>
+            <a href="login_page.html">登陆</a>
+            <a href="register_page.html">注册</a>
+        </span>
+    </div>
 
-<div class="pic_display">
-    <figure>
-        <a href="resources/img/14.jpg"><img src="resources/img/14.jpg" width=285px height=796px></a>
-        <figcaption>
-            <h3>pic1</h3>
-            <h3>Author</h3>
-            <p>
-                blahblah
-            </p>
-            <a href="product_detail.html">LEARN MORE</a>
-        </figcaption>
-    </figure>
 
-    <figure>
-        <a href="resources/img/8.jpg"><img src="resources/img/8.jpg" width=285px height=796px></a>
-        <figcaption>
-            <h3>pic2</h3>
-            <h3>Author</h3>
-            <p>
-                blahblah
-            </p>
-            <a href="product_detail.html">LEARN MORE</a>
-        </figcaption>
-    </figure>
 
-    <figure>
-    <a href="resources/img/12.jpg"><img src="resources/img/12.jpg" width=285px height=796px></a>
-        <figcaption>
-            <h3>pic3</h3>
-            <h3>Author</h3>
-            <p>
-                blahblah
-            </p>
-            <a href="product_detail.html">LEARN MORE</a>
-        </figcaption>
-    </figure>
 
-</div>
+    <hr/>
+
+    <div class="head_pic">
+        <a href="product_detail.html"><img src="resources/img/7.jpg" alt = "family" /></a>
+    </div>
+
+    <hr/>
+
+    <div class="mostviewed">
+        <h5>Most Viewed</h5>
+    </div>
+
+    <div class="pic_display">
+        <div class = "row">
+
+            <div class="column">
+                <figure>
+                    <a href="product_detail.html"><img class="displayimg" src="resources/img/14.jpg" alt="fancystuff"></a>
+                    <figcaption class="figtitle">
+                        <h3>pic1</h3>
+                        <h3>Author</h3>
+                        <p>
+                            blahblah
+                        </p>
+                        <a  href="product_detail.html">LEARN MORE</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="column">
+                <figure >
+                    <a href="product_detail.html"><img class="displayimg" src="resources/img/12.jpg" alt="fancystuff"></a>
+                    <figcaption class="figtitle">
+                        <h3>pic3</h3>
+                        <h3>Author</h3>
+                        <p>
+                            blahblah
+                        </p>
+                        <a  href="product_detail.html">LEARN MORE</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="column">
+                <figure >
+                    <a href="product_detail.html"><img class="displayimg" src="resources/img/8.jpg" alt="fancystuff"></a>
+                    <figcaption class="figtitle">
+                        <h3>pic2</h3>
+                        <h3>Author</h3>
+                        <p>
+                            blahblah
+                        </p>
+                        <a href="product_detail.html">LEARN MORE</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </div>
+    </div>
 
     <footer class="footer">
         <p>ArtStore. Produced and maintained by YC. All rights reserved.</p>

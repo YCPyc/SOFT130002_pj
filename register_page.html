@@ -3,43 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
-    <style>
-        .button {
-            font: bold 11px Arial;
-            text-decoration: none;
-            background-color: #EEEEEE;
-            color: #333333;
-            padding: 2px 6px 2px 6px;
-            border-top: 1px solid #CCCCCC;
-            border-right: 1px solid #333333;
-            border-bottom: 1px solid #333333;
-            border-left: 1px solid #CCCCCC;
+    <link rel="stylesheet" type="text/css" href="loginregister.css" media="all">
+   <!-- <style>
+        .centertable{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20%;
+
         }
-    </style>
+    </style>-->
 
 </head>
 
 <body>
 <div id="id01" class="modal">
 
-    <form class="modal-content animate"  method="post">
-        <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" >
+    <table class="centertable">
+        <form class="modal-content"  method="post">
+            <tr>
+                <td colspan="2"><label>New Username:</label></td>
+                <td colspan="2"> <input style="width:100%" type="text" placeholder="Enter Username" name="uname" ></td>
+            </tr>
 
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw">
+            <tr>
+                <td colspan="2"><label>Date of Birth:</label></td>
+                <td colspan="2"> <input style="width:100%" type="text" placeholder="Enter Date of Birth" name="DOB" ></td>
+            </tr>
 
-            <button type="submit">Create Account</button>
+            <tr>
+                <td colspan="2"><label>Gender:</label></td>
+                <td colspan="2"> <input style="width:100%" type="text" placeholder="Enter Gender" name="Gender" ></td>
+            </tr>
 
-        </div>
+            <tr>
+                <td colspan="2"><label>New Password:</label></td>
+                <td colspan="2"> <input style="width:100%" type="password" placeholder="Enter Password" name="psw"></td>
+            </tr>
 
-        <div class="container" style="background-color:#f1f1f1">
-            <a class="button" href="html_Spring.html">Cancel</a>
+            <tr>
+                <td colspan="2"><label>Re-enter New Password:</label></td>
+                <td colspan="2"> <input style="width:100%" type="password" placeholder="Enter Password" name="psw"></td>
+            </tr>
 
-            <span class="psw"><a href="login_page.html">Back to login</a></span>
-        </div>
-    </form>
+            <tr>
+                <td colspan="4"><div class="container">
+                    <button class = "buttonsty" type="submit">Create</button>
+                    <button class = "buttonsty" type="button" onclick="window.location.href='login_page.html';">Back to Login</button>
+                    <button class = "buttonsty" type="button" onclick="window.location.href='html_Spring.html';">Home</button>
+            </div></td>
+            </tr>
+        </form>
+
+    </table>
 </div>
 </body>
 </html>

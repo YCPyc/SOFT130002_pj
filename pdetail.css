@@ -1,0 +1,42 @@
+.nav_01 a {
+    float: right;
+    text-align: center;
+    width: 50px;
+    margin-top:2%;
+}
+
+.nav_01 a:hover{
+    color:red;
+}
+
+.logo_subtitle{
+    padding: 0px;
+}
+
+.logo_subtitle a:hover{
+    color:red;
+}
+
+.title{
+    text-align: center;
+}
+
+.figure{
+    float: left;
+    padding: 100px;
+
+}
+.wishbutton{
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.wishbutton:hover{
+    background-color: black;
+    color:  white;
+}
