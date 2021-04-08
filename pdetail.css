@@ -20,12 +20,24 @@
 .title{
     text-align: center;
 }
+.title a{
+    text-decoration: none;
+}
+.title a:hover{
+    color:red;
+}
 
 .figure{
     float: left;
     padding: 100px;
 
 }
+
+.details img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
 .wishbutton{
     background-color: white;
     border: 2px solid black;
@@ -39,4 +51,9 @@
 .wishbutton:hover{
     background-color: black;
     color:  white;
+}
+
+table{
+    padding-left: 200px;
+    padding-right: 200px;
 }

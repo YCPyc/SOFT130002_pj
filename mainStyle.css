@@ -12,6 +12,13 @@
 
 }
 
+.logo_subtitle h1,h5{
+    margin: 0;
+}
+
+.navbar{
+    height: 50px;
+}
 
 
 /*.searchbar{
@@ -49,12 +56,15 @@
     padding: 0px;
     text-align: center;
     margin: 10px;
-
+    width: 436px;
+    /*float: inside;*/
 }
 
 .figtitle a:hover{
     color: red;
+
 }
+
 
 .displayimg{
     width:356px;
