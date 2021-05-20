@@ -1,7 +1,13 @@
+body{
+    margin: 0;
+}
+
 .centertable{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20%;
+    position: absolute;
+    text-align: center;
+    margin-left: 550px;
+    margin-right: 500px;
+    margin-top: 25%;
 
 }
 
@@ -30,4 +36,29 @@ button{
 button:hover{
     background-color: black;
     color: white;
+}
+
+.slideshow-container{
+    position: relative;
+    z-index: -1;
+}
+
+.prev, .next{
+    cursor:pointer;
+    position:absolute;
+    top:45%;
+    width:auto;
+    color: white;
+    padding: 16px;
+    font-size: 28px;
+    border-radius: 0 10px 10px 0;
+}
+
+.next{
+    right:0;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.prev:hover,.next:hover{
+    background-color: rgba(0,0,0,0.8);
 }

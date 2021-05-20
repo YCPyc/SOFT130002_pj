@@ -19,7 +19,7 @@
 <div id="id01" class="modal">
 
     <table class="centertable">
-        <form class="modal-content"  method="post">
+        <form class="modal-content" name="regForm" method="post">
             <tr>
                 <td colspan="2"><label>New Username:</label></td>
                 <td colspan="2"> <input style="width:100%" type="text" placeholder="Enter Username" name="uname" ></td>
@@ -42,12 +42,12 @@
 
             <tr>
                 <td colspan="2"><label>Re-enter New Password:</label></td>
-                <td colspan="2"> <input style="width:100%" type="password" placeholder="Enter Password" name="psw"></td>
+                <td colspan="2"> <input style="width:100%" type="password" placeholder="Enter Password" name="pswcheck"></td>
             </tr>
 
             <tr>
                 <td colspan="4"><div class="container">
-                    <button class = "buttonsty" type="submit">Create</button>
+                    <button class = "buttonsty" type="submit" onclick="registerFormCheck()">Create</button>
                     <button class = "buttonsty" type="button" onclick="window.location.href='login_page.html';">Back to Login</button>
                     <button class = "buttonsty" type="button" onclick="window.location.href='html_Spring.html';">Home</button>
             </div></td>
@@ -56,5 +56,8 @@
 
     </table>
 </div>
+
+<script type="text/javascript" src="formCheck.js" ></script>
+
 </body>
 </html>

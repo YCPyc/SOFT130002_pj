@@ -17,28 +17,50 @@
 <body>
 <div id="id01" class="modal">
 
+
+
 <table class="centertable">
     <form class="modal-content"  method="post">
         <tr>
             <td><label>Username:</label></td>
-            <td colspan="2"> <input style="width: 100%" type="text" placeholder="Enter Username" name="uname" ></td>
+            <td colspan="2"> <input style="width: 100%" type="text" placeholder="Enter Username" name="uname" id="accountName" ></td>
         </tr>
 
         <tr>
             <td><label>Password:</label></td>
-            <td colspan="2"> <input style="width: 100%" type="password" placeholder="Enter Password" name="psw"></td>
+            <td colspan="2"> <input style="width: 100%" type="password" placeholder="Enter Password" name="psw" id="accountPW"></td>
         </tr>
 
         <tr>
             <td colspan="4"><div class="container">
-                <button class = "buttonsty" type="submit">Login</button>
+                <button class = "buttonsty" type="submit" onclick="loginFormCheck();">Login</button>
                 <button class = "buttonsty" type="button" onclick="window.location.href='register_page.html';">Register</button>
                 <button class = "buttonsty" type="button" onclick="window.location.href='html_Spring.html';">Home</button>
             </div></td>
         </tr>
+
     </form>
 
 </table>
+
+    <div class="slideshow-container">
+        <div class="mySlide fade">
+            <img src="resources/img/48.jpg" width="100%" height="900px"/>
+        </div>
+        <div class="mySlide fade">
+            <img src="resources/img/58.jpg" width="100%" height="900px"/>
+        </div>
+        <div class="mySlide fade">
+            <img src="resources/img/70.jpg" width="100%" height=900px"/>
+        </div>
+
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a  class="next" onclick="plusSlide(1)">&#10095;</a>
+    </div>
+
 </div>
+
+<script type="text/javascript" src="formCheck.js"></script>
+
 </body>
 </html>

@@ -34,15 +34,19 @@
 <body>
     <span class = "logo_subtitle" >
         <h1 style="display: inline-block">Art Store</h1>
+        <h5 style="display: inline-block">Where you find GENIUS and EXTRAODINARY </h5>
+        <a href="html_Spring.html">首页</a>
+        <a href="search.html">搜索</a>
+        <a href="product_detail.html">详情</a>
+        <a href="collection.html">收藏</a>
         <a href="login_page.html">登陆</a>
-        <h5 style="display: inline-block">or </h5>
         <a href="register_page.html">注册</a>
     </span>
 
     <span class="searchbar" style="display: inline-block">
-            <form>
+            <form action="search.html">
                 <input type="text" placeholder="search..." name="search">
-                <button type="submit" onclick="window.location.href='search.html';">Search</button>
+                <button type="submit" >Search</button>
             </form>
     </span>
 
@@ -55,7 +59,7 @@
 
     <div class="title">
         <h4>La Grande Odalisque</h4>
-        <p><a href="collection.html">Jean-Auguste-Dominique Ingres</a></p>
+        <p><a href="search.html">Jean-Auguste-Dominique Ingres</a></p>
     </div>
 
     <hr/>
@@ -70,7 +74,7 @@
         <tr><td> <p>Location: Louvre, Paris</p> </td></tr>
         <tr><td> <hr/> </td></tr>
         <tr><td> <p>Price: 180,000,000 dollars</p> </td></tr>
-        <tr><td> <button class="wishbutton" >Add to wish bag</button> </td></tr>
+        <tr><td> <button class="wishbutton" onclick="myFunction()">Add to wish bag</button> </td></tr>
 
 
     </table>
@@ -90,5 +94,10 @@
     <!--    <button class="wishbutton" >Add to wish bag</button>-->
     <!--</div>-->
 
+    <script>
+        function myFunction(){
+            alert("Added Successfully");
+        }
+    </script>
 </body>
 </html>

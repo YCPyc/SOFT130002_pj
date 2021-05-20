@@ -1,10 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <title>Main Page</title>
     <link rel="stylesheet" type = "text/css" href="mainStyle.css" media = "all">
-   <!-- <style>
+    <style>
+
+    </style>
+
+</head>
+
+<body style="margin: 0">
+
+<div class="page-container">
+    <div class="navbar">
+        <span class = "nav_01">
+            <a href="html_Spring.html">首页</a>
+            <a href="search.html">搜索</a>
+            <a href="product_detail.html">详情</a>
+            <a href="collection.html">收藏</a>
+            <a href="login_page.html">登陆</a>
+            <a href="register_page.html">注册</a>
+        </span>
+    </div>
+
+    <div class="searchengine">
+        <span class = "logo_subtitle" >
+            <h1 style="display: inline-block">Art Store</h1>
+            <h5 style="display: inline-block">Where you find GENIUS and EXTRAODINARY </h5>
+        </span>
+        </br>
+        <span class="searchbar" style="display: inline-block">
+                            <form action="search.html">
+                                <input type="text" placeholder="search..." name="search" list="options" size="50">
+                                    <datalist id="options">
+                                        <option label="Hello" value="Hello"> Hello<option>
+                                    </datalist>
+                                <button type="submit" >Search</button>
+                            </form>
+                    </span>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlide fade">
+            <img src="resources/img/48.jpg" width="100%" height="800px"/>
+        </div>
+        <div class="mySlide fade">
+            <img src="resources/img/58.jpg" width="100%" height="800px"/>
+        </div>
+        <div class="mySlide fade">
+            <img src="resources/img/70.jpg" width="100%" height="800px"/>
+        </div>
+
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a  class="next" onclick="plusSlide(1)">&#10095;</a>
+    </div>
+
+    <div class="pic_display">
+
+        <div class="img_container">
+            <div class="img">
+                <a href="product_detail.html"><img class="displayimg" src="resources/img/14.jpg" alt="fancystuff"></a>
+            </div>
+            <div class="img_text">
+                <h3>Two Nudes</h3>
+                <h3>Author: Pablo Picasso</h3>
+                <p >
+                    The terracotta shades and heavy monumentality of the figures in <em>Two Nudes</em> derive from Picasso\'s interest at the time in the ancient Iberian sculpture of his native Spain.
+                    Like many artists in the first decades of the twentieth century, Picasso found ancient and non-western art to be fruitful alternatives both to the prescribed forms of academic painting and the visual culture of industrial modernity.
+                    These two women are nearly mirror images, but the face of the figure on the left bears a strong resemblance to that of the figure on the far left in <em>Les Demoiselles d\'Avignon</em>.
+                </p>
+                <a  class="figname" href="product_detail.html">LEARN MORE</a>
+            </div>
+        </div>
+
+        <div class="img_container">
+            <div class="img_text">
+                <h3>Portrait of Gertrude Stein</h3>
+                <h3>Author: Pablo Picasso</h3>
+                <p>
+                    By 1905 Picasso became a favorite of the American art collectors Leo and Gertrude Stein.
+                    Their older brother Michael Stein and his wife Sarah also became collectors of his work.
+                    Picasso painted portraits of both Gertrude Stein and her nephew Allan Stein.
+                    Gertrude Stein became Picasso\'s principal patron, acquiring his drawings and paintings and exhibiting them in her informal Salon at her home in Paris.
+                    At one of her gatherings in 1905, he met Henri Matisse, who was to become a lifelong friend and rival.
+                </p>
+                <a  class="figname" href="product_detail.html">LEARN MORE</a>
+            </div>
+            <div class="img">
+                <a href="product_detail.html"><img class="displayimg" src="resources/img/12.jpg" alt="fancystuff"></a>
+            </div>
+        </div>
+
+        <div class="img_container">
+            <div class="img">
+                <a href="product_detail.html"><img class="displayimg" src="resources/img/8.jpg" alt="fancystuff"></a>
+            </div>
+            <div class="img_text">
+                <h3>Portrait of Daniel-Henry Kahnweiler</h3>
+                <h3>Author: Pablo Picasso</h3>
+                <p >
+                    In 1907 Picasso joined an art gallery that had recently been opened in Paris by Daniel-Henry Kahnweiler.
+                    Kahnweiler was a German art historian, art collector who became one of the premier French art dealers of the 20th century.
+                    He was among the first champions of Pablo Picasso, Georges Braque and the Cubism that they jointly developed.
+                    Kahnweiler promoted burgeoning artists such as André Derain, Kees Van Dongen, Fernand Léger, Juan Gris, Maurice de Vlaminck and several others who had come from all over the globe to live and work in Montparnasse at the time.
+                </p>
+                <a class="figname" href="product_detail.html">LEARN MORE</a>
+            </div>
+        </div>
+
+
+
+        </div>
+    </div>
+
+  <footer class="footer">
+        <p>ArtStore. Produced and maintained by YC. All rights reserved.</p>
+    </footer>
+
+</div>
+</body>
+
+<script>
+    var slideIndex=1;
+    showSlide(slideIndex);
+    function plusSlide(n){
+        showSlide(slideIndex+=n);
+    }
+    function currentSlide(n){
+        showSlide(slideIndex=n);
+
+    }
+
+    function showSlide(n){
+        var i;
+        var slides=document.getElementsByClassName("mySlide");
+
+        slideIndex++;
+        if(slideIndex> slides.length){
+            slideIndex = 1;
+        }
+        if(n> slides.length){
+            slideIndex = 1;
+        }
+        if(n<1){
+            slideIndex = slides.length;
+        }
+        for(i = 0; i<slides.length;i++){
+            slides[i].style.display="none";
+        }
+        slides[slideIndex-1].style.display="block";
+        setTimeout(showSlide,4000);
+
+
+    }
+
+</script>
+
+</html>
+
+<!--/*old codes*/-->
+<!-- Carousel bootstrap
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+
+<!-- Carousel bootstrap additional css <style>
+       /* Make the image fully responsive */
+       .carousel-inner ig {
+           width: 100%;
+           height: 600px;
+       }
+
+       .carousel-inner{
+           position: relative;
+           text-align: center;
+           color: white;
+       }
+       .searchengine{
+           position: absolute;
+       }
+
+   </style>-->
+
+<!-- Old CSS <style>
     .nav_01 a {float: right; text-align: center; width: 50px; padding-top: 2%; padding-bottom:2%; padding-left:0; padding-right:0;}
     .logo_subtitle{padding: 0px}
     .head_pic{text-align: center}
@@ -45,109 +225,121 @@
         height: 640px;
     }
 
-
-
-
-
     </style>-->
-</head>
 
-<body>
-<div class="content-wrap">
+<!-- bootstrap html <div id = "demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target ="#demo" data-slide-to="0" class="active"></li>
+            <li data-target ="#demo" data-slide-to="1"></li>
+            <li data-target ="#demo" data-slide-to="2"></li>
 
-    <div class="navbar">
-        <span class = "logo_subtitle" >
-            <h1 style="display: inline-block">Art Store</h1>
-            <h5 style="display: inline-block">Where you find GENIUS and EXTRAODINARY </h5>
-        </span>
+        </ul>
 
-        <span class="searchbar" style="display: inline-block">
-            <form>
-                <input type="text" placeholder="search..." name="search" list="options">
-                 <datalist id="options">
-                    <option label="Hello" value="Hello"> Hello<option>
-                </datalist>
-                <button type="submit" onclick="window.location.href='search.html';">Search</button>
-            </form>
-        </span>
+        <div class="carousel-inner">
+            <div class = "carousel-item active"><img src="resources/img/48.jpg" height="640" width="1323"/>
+            </div>
+            <div class = "carousel-item"><img src="resources/img/58.jpg" height="640" width="907"/></div>
+            <div class = "carousel-item"><img src="resources/img/70.jpg" height="640" width="866"/></div>
 
-        <span class = "nav_01">
-            <a href="">标题</a>
-            <a href="search.html">搜索</a>
-            <a href="product_detail.html">详情</a>
-            <a href="login_page.html">登陆</a>
-            <a href="register_page.html">注册</a>
-        </span>
-    </div>
-
-
-
-
-    <hr/>
-
-    <div class="head_pic">
-        <a href="product_detail.html"><img src="resources/img/7.jpg" alt = "family" /></a>
-    </div>
-
-    <hr/>
-
-    <div class="mostviewed">
-        <h5>Most Viewed</h5>
-    </div>
-
-    <div class="pic_display">
-        <div class = "row">
-
-            <div class="column">
-                <figure>
-                    <a href="product_detail.html"><img class="displayimg" src="resources/img/14.jpg" alt="fancystuff"></a>
-                    <figcaption class="figtitle">
-                        <h3>Two Nudes</h3>
-                        <h3>Author: Pablo Picasso</h3>
-                        <p style="width: 350px ">
-                            The terracotta shades and heavy monumentality of the figures in <em>Two Nudes</em> derive from Picasso\'s interest at the time in the ancient Iberian sculpture of his native Spain.
-                        </p>
-                        <a  href="product_detail.html">LEARN MORE</a>
-                    </figcaption>
-                </figure>
+            <div class="navbar">
+                    <span class = "nav_01">
+                        <a href="html_Spring.html">首页</a>
+                        <a href="search.html">搜索</a>
+                        <a href="product_detail.html">详情</a>
+                        <a href="collection.html">收藏</a>
+                        <a href="login_page.html">登陆</a>
+                        <a href="register_page.html">注册</a>
+                    </span>
             </div>
 
-            <div class="column">
-                <figure >
-                    <a href="product_detail.html"><img class="displayimg" src="resources/img/12.jpg" alt="fancystuff"></a>
-                    <figcaption class="figtitle">
-                        <h3>Portrait of Gertrude Stein</h3>
-                        <h3>Author: Pablo Picasso</h3>
-                        <p style="width: 350px ">
-                            By 1905 Picasso became a favorite of the American art collectors Leo and Gertrude Stein. Their older brother Michael Stein and his wife Sarah also became collectors of his work.
-                        </p>
-                        <a  href="product_detail.html">LEARN MORE</a>
-                    </figcaption>
-                </figure>
+            <div class="searchengine">
+                <span class = "logo_subtitle" >
+                    <h1 style="display: inline-block">Art Store</h1>
+                    <h5 style="display: inline-block">Where you find GENIUS and EXTRAODINARY </h5>
+                </span>
+                </br>
+                <span class="searchbar" style="display: inline-block">
+                        <form action="search.html">
+                            <input type="text" placeholder="search..." name="search" list="options" size="50">
+                                <datalist id="options">
+                                    <option label="Hello" value="Hello"> Hello<option>
+                                </datalist>
+                            <button type="submit" >Search</button>
+                        </form>
+                </span>
             </div>
 
-            <div class="column">
-                <figure >
-                    <a href="product_detail.html"><img class="displayimg" src="resources/img/8.jpg" alt="fancystuff"></a>
-                    <figcaption class="figtitle">
-                        <h3>Portrait of Daniel-Henry Kahnweiler</h3>
-                        <h3>Author: Pablo Picasso</h3>
-                        <p style="width: 350px ">
-                            In 1907 Picasso joined an art gallery that had recently been opened in Paris by Daniel-Henry Kahnweiler. Kahnweiler was a German art historian, art collector who became one of the premier French art dealers of the 20th century.
-                        </p>
-                        <a href="product_detail.html">LEARN MORE</a>
-                    </figcaption>
-                </figure>
-            </div>
+
+
 
         </div>
-    </div>
 
-    <footer class="footer">
-        <p>ArtStore. Produced and maintained by YC. All rights reserved.</p>
-    </footer>
-</div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
 
+    </div>-->
 
-</body>
-</html>
+<!-- original main page body layout <hr/>
+
+   <div class="head_pic">
+       <a href="product_detail.html"><img src="resources/img/7.jpg" alt = "family" /></a>
+   </div>
+
+   <hr/>
+
+   <div class="mostviewed">
+       <h5>Most Viewed</h5>
+   </div>
+
+   <div class="pic_display">
+       <div class = "row">
+
+           <div class="column">
+
+                   <a href="product_detail.html"><img class="displayimg" src="resources/img/14.jpg" alt="fancystuff"></a>
+
+                   <h3>Two Nudes</h3>
+                   <h3>Author: Pablo Picasso</h3>
+                   <p >
+                       The terracotta shades and heavy monumentality of the figures in <em>Two Nudes</em> derive from Picasso\'s interest at the time in the ancient Iberian sculpture of his native Spain.
+                   </p>
+                   <a  class="figname" href="product_detail.html">LEARN MORE</a>
+
+           </div>
+
+           <div class="column">
+
+                   <a href="product_detail.html"><img class="displayimg" src="resources/img/12.jpg" alt="fancystuff"></a>
+
+                   <h3>Portrait of Gertrude Stein</h3>
+                   <h3>Author: Pablo Picasso</h3>
+                   <p>
+                           By 1905 Picasso became a favorite of the American art collectors Leo and Gertrude Stein. Their older brother Michael Stein and his wife Sarah also became collectors of his work.
+                   </p>
+                   <a  class="figname" href="product_detail.html">LEARN MORE</a>
+
+           </div>
+
+           <div class="column">
+
+                   <a href="product_detail.html"><img class="displayimg" src="resources/img/8.jpg" alt="fancystuff"></a>
+                   <h3>Portrait of Daniel-Henry Kahnweiler</h3>
+                   <h3>Author: Pablo Picasso</h3>
+                   <p >
+                           In 1907 Picasso joined an art gallery that had recently been opened in Paris by Daniel-Henry Kahnweiler. Kahnweiler was a German art historian, art collector who became one of the premier French art dealers of the 20th century.
+                   </p>
+                   <a class="figname" href="product_detail.html">LEARN MORE</a>
+
+           </div>
+
+       </div>
+   </div>
+
+   <footer class="footer">
+       <p>ArtStore. Produced and maintained by YC. All rights reserved.</p>
+   </footer>
+</div>-->
